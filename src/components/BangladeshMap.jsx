@@ -77,9 +77,9 @@ export const BangladeshMap = () => {
 
     return (
         <div className="w-full max-w-7xl mx-auto p-4 md:p-8 font-sans bg-white min-h-screen">
-            <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-[700px]">
+            <div className="flex flex-col lg:flex-row gap-6 h-auto lg:h-175">
                 {/* LEFT: Map Container */}
-                <div className="relative flex-1 bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden flex items-center justify-center p-4 lg:p-10 group">
+                <div className="relative flex-1 bg-white rounded-2xl overflow-hidden flex items-center justify-center p-4 lg:p-10 group">
                     {/* Map Controls */}
                     <div className="absolute top-4 right-4 flex flex-col gap-2 z-20">
                         <button
@@ -108,12 +108,12 @@ export const BangladeshMap = () => {
 
                     {/* The SVG Map */}
                     <div
-                        className="w-full max-w-7xl h-full flex items-center justify-center transition-transform duration-500 ease-out"
+                        className="w-4xl max-w-4xl h-full flex items-center justify-center transition-transform duration-500 ease-out"
                         style={{ transform: `scale(${zoom})` }}
                     >
                         <svg
                             viewBox="0 0 437.80637 601.16034"
-                            className="w-full h-full max-h-[650px] drop-shadow-lg"
+                            className="w-full h-full max-h-162.5 drop-shadow-lg"
                             style={{ overflow: "visible" }}
                         >
                             <defs>
@@ -190,7 +190,7 @@ export const BangladeshMap = () => {
                 id="map-tooltip"
                 place="top"
                 offset={15}
-                className="!bg-slate-900/90 !backdrop-blur-md !text-white !opacity-100 !rounded-xl !px-4 !py-3 !shadow-xl !border !border-white/10 z-50 hidden md:block"
+                className="bg-slate-900/90! backdrop-blur-md! text-white! opacity-100! rounded-xl! px-4! py-3! shadow-xl! border! border-white/10! z-50 hidden md:block"
                 noArrow
             >
                 {hoveredRegion && (
